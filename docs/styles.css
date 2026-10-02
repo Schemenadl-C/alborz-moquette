@@ -45,7 +45,7 @@ button { font-family: inherit; cursor: pointer; }
 .nav a { color: var(--muted); font-weight: 500; font-size: 15px; }
 .nav a:hover, .nav a.active { color: var(--navy); }
 .header-actions { display: flex; align-items: center; gap: 8px; }
-.lang-toggle {
+.lang-toggle, a.lang-toggle {
   border: 1px solid var(--line); background: #fff; color: var(--navy);
   border-radius: 999px; padding: 6px 12px; font-weight: 700; font-size: 12px; letter-spacing: .4px;
 }
