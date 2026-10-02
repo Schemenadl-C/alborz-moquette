@@ -1,328 +1,306 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alborz Moquette | Premium Floor Coverings</title>
+  <title>موکت البرز | پوشش‌های لوکس کف</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header -->
   <header class="header">
     <div class="container header-inner">
       <a href="#home" class="logo">
-        <span class="logo-mark">AM</span>
-        <span class="logo-text">Alborz Moquette</span>
+        <span class="logo-mark">م‌ا</span>
+        <span class="logo-text" data-i18n="brand">موکت البرز</span>
       </a>
       <nav class="nav" id="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
-        <a href="#sales">Retail & Wholesale</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" data-i18n="navHome">خانه</a>
+        <a href="#about" data-i18n="navAbout">درباره ما</a>
+        <a href="#products" data-i18n="navProducts">محصولات</a>
+        <a href="#sales" data-i18n="navSales">خرده و عمده</a>
+        <a href="#contact" data-i18n="navContact">تماس</a>
       </nav>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Language">EN</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="menu" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- Hero -->
   <section class="hero" id="home">
-    <div class="hero-overlay"></div>
+    <div class="hero-media">
+      <img src="images/velour-living.jpg" alt="">
+    </div>
+    <div class="hero-shade"></div>
     <div class="container hero-content">
-      <p class="hero-eyebrow">Est. Quality Floor Coverings</p>
-      <h1>Premium Moquette<br>for Every Space</h1>
-      <p class="hero-sub">Elegant designs, durable materials, available in retail & wholesale. Crafted with care in Iran.</p>
+      <p class="hero-eyebrow" data-i18n="heroEyebrow">تولید موکت از البرز</p>
+      <h1 data-i18n="heroTitle">موکت لوکس برای هر فضا</h1>
+      <p class="hero-sub" data-i18n="heroSub">طرح‌های کلاسیک و مدرن، رنگ‌بندی متنوع، فروش خرده‌فروشی و عمده. مناسب خانه، هتل، راهرو و پله.</p>
       <div class="hero-cta">
-        <a href="#products" class="btn btn-primary">Explore Products</a>
-        <a href="#contact" class="btn btn-outline">Get a Quote</a>
+        <a href="#products" class="btn btn-primary" data-i18n="ctaProducts">مشاهده محصولات</a>
+        <a href="#contact" class="btn btn-outline" data-i18n="ctaQuote">دریافت قیمت</a>
       </div>
     </div>
   </section>
 
-  <!-- About -->
   <section class="section about" id="about">
     <div class="container">
       <div class="section-header">
-        <p class="eyebrow">Who We Are</p>
-        <h2>About Alborz Moquette</h2>
+        <p class="eyebrow" data-i18n="aboutEyebrow">ما که هستیم</p>
+        <h2 data-i18n="aboutTitle">درباره موکت البرز</h2>
       </div>
       <div class="about-grid">
         <div class="about-text">
-          <p>Alborz Moquette (Taban Moquette Alborz) is a trusted manufacturer of high-quality floor coverings. We specialize in a wide range of moquette designs — from classic ribbed textures to elegant geometric and floral patterns.</p>
-          <p>Our products are engineered for durability, comfort, and style. Whether you need carpeting for residential, commercial, or hospitality projects, we offer both retail quantities and large-scale wholesale supply.</p>
+          <p data-i18n="aboutP1">موکت البرز (تابان موکت البرز) تولیدکننده پوشش کف با کیفیت است. مجموعه ما شامل طرح‌های ولور، الماس، زرین و پارکت در رنگ‌های گرم و خنثی می‌شود.</p>
+          <p data-i18n="aboutP2">محصولات برای دوام، راحتی و زیبایی طراحی شده‌اند؛ از سفارش چند متری خرده‌فروشی تا تأمین پروژه‌های بزرگ عمده.</p>
           <ul class="about-features">
-            <li>Premium fiber construction</li>
-            <li>Wide color palette</li>
-            <li>Custom roll lengths available</li>
-            <li>Competitive wholesale pricing</li>
+            <li data-i18n="feat1">الیاف مرغوب و بافت متراکم</li>
+            <li data-i18n="feat2">رنگ‌بندی متنوع</li>
+            <li data-i18n="feat3">رول با عرض سفارشی</li>
+            <li data-i18n="feat4">قیمت رقابتی عمده</li>
           </ul>
         </div>
         <div class="about-stats">
-          <div class="stat">
-            <span class="stat-num">15+</span>
-            <span class="stat-label">Years Experience</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">50+</span>
-            <span class="stat-label">Design Variants</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">1000+</span>
-            <span class="stat-label">Projects Supplied</span>
-          </div>
+          <div class="stat"><span class="stat-num">۱۵+</span><span class="stat-label" data-i18n="statYears">سال تجربه</span></div>
+          <div class="stat"><span class="stat-num">۵۰+</span><span class="stat-label" data-i18n="statDesigns">طرح و رنگ</span></div>
+          <div class="stat"><span class="stat-num">۱۰۰۰+</span><span class="stat-label" data-i18n="statProjects">پروژه تأمین‌شده</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Products -->
   <section class="section products" id="products">
     <div class="container">
       <div class="section-header">
-        <p class="eyebrow">Our Collection</p>
-        <h2>Product Catalog</h2>
-        <p class="section-desc">Each design is available in multiple colors. Specifications include pile height, weight per square meter, and available formats.</p>
+        <p class="eyebrow" data-i18n="prodEyebrow">مجموعه ما</p>
+        <h2 data-i18n="prodTitle">کاتالوگ محصولات</h2>
+        <p class="section-desc" data-i18n="prodDesc">برای هر طرح، ارتفاع پرز، وزن هر متر مربع و رنگ‌های موجود آمده است. روی عکس‌ها بزنید تا بزرگ شوند.</p>
       </div>
 
-      <!-- Product 1: Kabriti -->
-      <article class="product-card">
-        <div class="product-images">
-          <img src="https://cdn.jsdelivr.net/gh/Schemenadl-C/alborz-moquette@main/docs/images/kabriti.jpg" alt="Kabriti design moquette samples" loading="lazy">
-        </div>
-        <div class="product-info">
-          <h3>Kabriti <span class="persian">(طرح کبریتی)</span></h3>
-          <p class="product-desc">Classic ribbed texture with a soft, linear appearance. Ideal for high-traffic areas and modern interiors.</p>
+      <!-- VELOUR -->
+      <article class="product" id="velour">
+        <div class="product-head">
+          <div>
+            <h3>طرح ولور <span class="en-name">Velour</span></h3>
+            <p data-i18n="velourDesc">پرز یکدست و نرم؛ ظاهری آرام و مدرن. مناسب نشیمن، اتاق خواب، راهرو و پله.</p>
+          </div>
           <div class="specs">
-            <div class="spec"><strong>Pile Height:</strong> 6–8 mm</div>
-            <div class="spec"><strong>Weight:</strong> 2.2 – 2.6 kg/m²</div>
-            <div class="spec"><strong>Width:</strong> 4 m rolls (custom lengths)</div>
-            <div class="spec"><strong>Format:</strong> Rolls & cut pieces</div>
+            <div><strong data-i18n="specHeight">ارتفاع پرز</strong><span>۶–۸ mm</span></div>
+            <div><strong data-i18n="specWeight">وزن</strong><span>۲٫۲–۲٫۶ kg/m²</span></div>
+            <div><strong data-i18n="specWidth">عرض رول</strong><span data-i18n="specWidthVal">۴ متر</span></div>
+            <div><strong data-i18n="specForm">فرمت</strong><span data-i18n="specFormVal">رول و برش</span></div>
           </div>
-          <div class="colors">
-            <p class="colors-title">Available Colors:</p>
-            <div class="color-swatches">
-              <span class="swatch" style="background:#6B7A8F" title="Gray (طوسی)"></span>
-              <span class="swatch" style="background:#8B5A3C" title="Brown (قهوه‌ای)"></span>
-              <span class="swatch" style="background:#6B4E3D" title="Cacao (کاکایویی)"></span>
-              <span class="swatch" style="background:#C4A484" title="Light Chocolate (شکلاتی روشن)"></span>
-            </div>
-            <p class="color-names">Gray · Brown · Cacao · Light Chocolate</p>
-          </div>
+        </div>
+        <div class="swatches">
+          <span class="dot" style="background:#7A8490"></span>
+          <span class="dot" style="background:#5C6570"></span>
+          <span class="dot" style="background:#9AA3AD"></span>
+          <span class="color-names" data-i18n="velourColors">طوسی روشن · طوسی · ذغالی</span>
+        </div>
+        <div class="gallery">
+          <figure class="wide"><img src="images/velour-living.jpg" alt="نشیمن با موکت ولور طوسی" data-full="images/velour-living.jpg"></figure>
+          <figure><img src="images/velour-stairs.jpg" alt="پله با موکت طوسی" data-full="images/velour-stairs.jpg"></figure>
+          <figure><img src="images/velour-bedroom.jpg" alt="اتاق خواب" data-full="images/velour-bedroom.jpg"></figure>
+          <figure><img src="images/velour-hall.jpg" alt="راهرو" data-full="images/velour-hall.jpg"></figure>
+          <figure><img src="images/velour-sample.jpg" alt="نمونه مربع" data-full="images/velour-sample.jpg"></figure>
+          <figure><img src="images/velour-rolls.jpg" alt="رول موکت" data-full="images/velour-rolls.jpg"></figure>
+          <figure><img src="images/velour-fold.jpg" alt="بافت نزدیک" data-full="images/velour-fold.jpg"></figure>
+          <figure><img src="images/velour-closeup.jpg" alt="کلوزآپ پرز" data-full="images/velour-closeup.jpg"></figure>
+          <figure><img src="images/velour-detail.jpg" alt="جزئیات کنار مبل" data-full="images/velour-detail.jpg"></figure>
         </div>
       </article>
 
-      <!-- Product 2: Parquet -->
-      <article class="product-card reverse">
-        <div class="product-images">
-          <img src="https://cdn.jsdelivr.net/gh/Schemenadl-C/alborz-moquette@main/docs/images/parquet.jpg" alt="Parquet design moquette samples" loading="lazy">
-        </div>
-        <div class="product-info">
-          <h3>Parquet <span class="persian">(طرح پارکت)</span></h3>
-          <p class="product-desc">Inspired by classic wood parquet flooring. Structured geometric blocks create a sophisticated, timeless look.</p>
+      <!-- ALMAS -->
+      <article class="product" id="almas">
+        <div class="product-head">
+          <div>
+            <h3>طرح الماس <span class="en-name">Almas</span></h3>
+            <p data-i18n="almasDesc">نقش لوزی و هندسی برجسته. شیک برای هتل، دفتر و خانه‌های معاصر.</p>
+          </div>
           <div class="specs">
-            <div class="spec"><strong>Pile Height:</strong> 5–7 mm</div>
-            <div class="spec"><strong>Weight:</strong> 2.0 – 2.4 kg/m²</div>
-            <div class="spec"><strong>Width:</strong> 4 m rolls</div>
-            <div class="spec"><strong>Format:</strong> Rolls & tiles</div>
+            <div><strong data-i18n="specHeight">ارتفاع پرز</strong><span>۶–۸ mm</span></div>
+            <div><strong data-i18n="specWeight">وزن</strong><span>۲٫۱–۲٫۵ kg/m²</span></div>
+            <div><strong data-i18n="specWidth">عرض رول</strong><span data-i18n="specWidthVal">۴ متر</span></div>
+            <div><strong data-i18n="specForm">فرمت</strong><span data-i18n="specFormVal">رول و برش</span></div>
           </div>
-          <div class="colors">
-            <p class="colors-title">Available Colors:</p>
-            <div class="color-swatches">
-              <span class="swatch" style="background:#7A8B9A" title="Gray"></span>
-              <span class="swatch" style="background:#2E5A8C" title="Blue"></span>
-              <span class="swatch" style="background:#8B1A2B" title="Burgundy"></span>
-              <span class="swatch" style="background:#8B5A3C" title="Brown"></span>
-              <span class="swatch" style="background:#6B4E3D" title="Cacao"></span>
-              <span class="swatch" style="background:#C4A484" title="Light Chocolate"></span>
-            </div>
-            <p class="color-names">Gray · Blue · Burgundy · Brown · Cacao · Light Chocolate</p>
-          </div>
+        </div>
+        <div class="swatches">
+          <span class="dot" style="background:#8B6B56"></span>
+          <span class="dot" style="background:#4A5560"></span>
+          <span class="dot" style="background:#8B4A32"></span>
+          <span class="dot" style="background:#C4B4A4"></span>
+          <span class="color-names" data-i18n="almasColors">شکلاتی سیر · طوسی · شکلاتی روشن · نقره‌ای</span>
+        </div>
+        <div class="gallery">
+          <figure class="wide"><img src="images/almas-living.jpg" alt="نشیمن طرح الماس" data-full="images/almas-living.jpg"></figure>
+          <figure><img src="images/almas-stairs.jpg" alt="پله طرح الماس" data-full="images/almas-stairs.jpg"></figure>
+          <figure><img src="images/almas-bedroom.jpg" alt="اتاق خواب الماس" data-full="images/almas-bedroom.jpg"></figure>
+          <figure><img src="images/almas-hall.jpg" alt="راهرو هتل" data-full="images/almas-hall.jpg"></figure>
+          <figure><img src="images/almas-sample.jpg" alt="نمونه الماس" data-full="images/almas-sample.jpg"></figure>
+          <figure><img src="images/almas-rolls.jpg" alt="رول‌های رنگی" data-full="images/almas-rolls.jpg"></figure>
+          <figure><img src="images/almas-swatches.jpg" alt="کاتالوگ رنگ" data-full="images/almas-swatches.jpg"></figure>
+          <figure><img src="images/almas-fold.jpg" alt="پشت و روی موکت" data-full="images/almas-fold.jpg"></figure>
+          <figure><img src="images/palette-almas.jpg" alt="پالت رنگ الماس" data-full="images/palette-almas.jpg"></figure>
         </div>
       </article>
 
-      <!-- Product 3: Zarin -->
-      <article class="product-card">
-        <div class="product-images">
-          <img src="https://cdn.jsdelivr.net/gh/Schemenadl-C/alborz-moquette@main/docs/images/zarin-5.jpg" alt="Zarin design moquette samples" loading="lazy">
-        </div>
-        <div class="product-info">
-          <h3>Zarin <span class="persian">(طرح زرین)</span></h3>
-          <p class="product-desc">Elegant floral and scroll motifs embossed into the surface. Perfect for formal living spaces and hospitality.</p>
+      <!-- ZARIN -->
+      <article class="product" id="zarin">
+        <div class="product-head">
+          <div>
+            <h3>طرح زرین <span class="en-name">Zarin</span></h3>
+            <p data-i18n="zarinDesc">نقش گل و اسلیمی برجسته. مناسب فضاهای رسمی، لابی و پذیرایی.</p>
+          </div>
           <div class="specs">
-            <div class="spec"><strong>Pile Height:</strong> 7–9 mm</div>
-            <div class="spec"><strong>Weight:</strong> 2.4 – 2.8 kg/m²</div>
-            <div class="spec"><strong>Width:</strong> 4 m rolls</div>
-            <div class="spec"><strong>Format:</strong> Rolls</div>
+            <div><strong data-i18n="specHeight">ارتفاع پرز</strong><span>۷–۹ mm</span></div>
+            <div><strong data-i18n="specWeight">وزن</strong><span>۲٫۴–۲٫۸ kg/m²</span></div>
+            <div><strong data-i18n="specWidth">عرض رول</strong><span data-i18n="specWidthVal">۴ متر</span></div>
+            <div><strong data-i18n="specForm">فرمت</strong><span data-i18n="zarinForm">رول</span></div>
           </div>
-          <div class="colors">
-            <p class="colors-title">Available Colors:</p>
-            <div class="color-swatches">
-              <span class="swatch" style="background:#6B7A8F" title="Gray"></span>
-              <span class="swatch" style="background:#2E5A8C" title="Blue"></span>
-              <span class="swatch" style="background:#8B5A3C" title="Brown"></span>
-              <span class="swatch" style="background:#6B4E3D" title="Cacao"></span>
-              <span class="swatch" style="background:#C4A484" title="Light Chocolate"></span>
-            </div>
-            <p class="color-names">Gray · Blue · Brown · Cacao · Light Chocolate</p>
-          </div>
+        </div>
+        <div class="swatches">
+          <span class="dot" style="background:#6B7A8F"></span>
+          <span class="dot" style="background:#1E4A8C"></span>
+          <span class="dot" style="background:#8B1A2B"></span>
+          <span class="dot" style="background:#8B5A3C"></span>
+          <span class="dot" style="background:#C4785A"></span>
+          <span class="dot" style="background:#5C4033"></span>
+          <span class="dot" style="background:#8A9AAA"></span>
+          <span class="dot" style="background:#C4B8A8"></span>
+          <span class="color-names" data-i18n="zarinColors">طوسی · آبی · زرشکی · قهوه‌ای · کاکائویی · شکلاتی · طوسی روشن · نسکافه‌ای</span>
+        </div>
+        <div class="gallery">
+          <figure class="wide"><img src="images/zarin-living.jpg" alt="نشیمن طرح زرین" data-full="images/zarin-living.jpg"></figure>
+          <figure><img src="images/zarin-stairs.jpg" alt="پله زرین" data-full="images/zarin-stairs.jpg"></figure>
+          <figure><img src="images/zarin-bedroom.jpg" alt="اتاق خواب زرین" data-full="images/zarin-bedroom.jpg"></figure>
+          <figure><img src="images/zarin-colors.jpg" alt="جدول رنگ زرین" data-full="images/zarin-colors.jpg"></figure>
+          <figure><img src="images/zarin-swatches.jpg" alt="نمونه‌ها" data-full="images/zarin-swatches.jpg"></figure>
+          <figure><img src="images/zarin-rolls.jpg" alt="رول زرین" data-full="images/zarin-rolls.jpg"></figure>
+          <figure><img src="images/zarin-fold.jpg" alt="بافت زرین" data-full="images/zarin-fold.jpg"></figure>
+          <figure><img src="images/zarin-closeup.jpg" alt="کلوزآپ نقش" data-full="images/zarin-closeup.jpg"></figure>
+          <figure><img src="images/palette-zarin.jpg" alt="پالت زرین" data-full="images/palette-zarin.jpg"></figure>
         </div>
       </article>
 
-      <!-- Product 4: Almas -->
-      <article class="product-card reverse">
-        <div class="product-images">
-          <img src="https://cdn.jsdelivr.net/gh/Schemenadl-C/alborz-moquette@main/docs/images/almas.jpg" alt="Almas diamond design moquette" loading="lazy">
-        </div>
-        <div class="product-info">
-          <h3>Almas <span class="persian">(طرح الماس)</span></h3>
-          <p class="product-desc">Diamond and geometric lattice pattern. Modern yet refined — excellent for contemporary homes and offices.</p>
+      <!-- PARQUET -->
+      <article class="product" id="parquet">
+        <div class="product-head">
+          <div>
+            <h3>طرح پارکت <span class="en-name">Parquet</span></h3>
+            <p data-i18n="parquetDesc">نقش هندسی الهام‌گرفته از پارکت چوب. گرم و رسمی برای پذیرایی و پله.</p>
+          </div>
           <div class="specs">
-            <div class="spec"><strong>Pile Height:</strong> 6–8 mm</div>
-            <div class="spec"><strong>Weight:</strong> 2.1 – 2.5 kg/m²</div>
-            <div class="spec"><strong>Width:</strong> 4 m rolls</div>
-            <div class="spec"><strong>Format:</strong> Rolls & cut-to-size</div>
+            <div><strong data-i18n="specHeight">ارتفاع پرز</strong><span>۵–۷ mm</span></div>
+            <div><strong data-i18n="specWeight">وزن</strong><span>۲٫۰–۲٫۴ kg/m²</span></div>
+            <div><strong data-i18n="specWidth">عرض رول</strong><span data-i18n="specWidthVal">۴ متر</span></div>
+            <div><strong data-i18n="specForm">فرمت</strong><span data-i18n="specFormVal">رول و برش</span></div>
           </div>
-          <div class="colors">
-            <p class="colors-title">Available Colors:</p>
-            <div class="color-swatches">
-              <span class="swatch" style="background:#5C4033" title="Dark Chocolate"></span>
-              <span class="swatch" style="background:#6B7A8F" title="Gray"></span>
-              <span class="swatch" style="background:#C4A484" title="Light Chocolate"></span>
-              <span class="swatch" style="background:#A8A9AD" title="Silver"></span>
-            </div>
-            <p class="color-names">Dark Chocolate · Gray · Light Chocolate · Silver</p>
-          </div>
+        </div>
+        <div class="swatches">
+          <span class="dot" style="background:#A88870"></span>
+          <span class="dot" style="background:#4A5560"></span>
+          <span class="dot" style="background:#8B4A32"></span>
+          <span class="dot" style="background:#D4C4B4"></span>
+          <span class="color-names" data-i18n="parquetColors">کاکائویی · طوسی · قهوه‌ای · شکلاتی روشن</span>
+        </div>
+        <div class="gallery">
+          <figure class="wide"><img src="images/parquet-living.jpg" alt="پذیرایی طرح پارکت" data-full="images/parquet-living.jpg"></figure>
+          <figure><img src="images/parquet-stairs.jpg" alt="پله پارکت" data-full="images/parquet-stairs.jpg"></figure>
+          <figure><img src="images/parquet-chair.jpg" alt="جزئیات مبل و کف" data-full="images/parquet-chair.jpg"></figure>
+          <figure><img src="images/parquet-sample.jpg" alt="نمونه پارکت" data-full="images/parquet-sample.jpg"></figure>
+          <figure><img src="images/parquet-rolls.jpg" alt="رول پارکت" data-full="images/parquet-rolls.jpg"></figure>
+          <figure><img src="images/parquet-closeup.jpg" alt="کلوزآپ نقش" data-full="images/parquet-closeup.jpg"></figure>
+          <figure><img src="images/palette-parquet.jpg" alt="پالت پارکت" data-full="images/palette-parquet.jpg"></figure>
+          <figure><img src="images/palette-kabriti.jpg" alt="پالت کبریتی" data-full="images/palette-kabriti.jpg"></figure>
         </div>
       </article>
-
-      <!-- Gallery of additional images -->
-      <div class="gallery">
-        <h3 class="gallery-title">More Views</h3>
-        <div class="gallery-grid">
-          <figure>
-            <img src="https://cdn.jsdelivr.net/gh/Schemenadl-C/alborz-moquette@main/docs/images/rolls-black-gray.jpg" alt="Moquette rolls in black and gray" loading="lazy">
-            <figcaption>Production rolls – Black & Gray tones</figcaption>
-          </figure>
-          <figure>
-            <img src="https://cdn.jsdelivr.net/gh/Schemenadl-C/alborz-moquette@main/docs/images/rolls-closeup.jpg" alt="Close-up of moquette rolls" loading="lazy">
-            <figcaption>Texture detail on rolls</figcaption>
-          </figure>
-          <figure>
-            <img src="https://cdn.jsdelivr.net/gh/Schemenadl-C/alborz-moquette@main/docs/images/geometric-dark.jpg" alt="Dark geometric moquette" loading="lazy">
-            <figcaption>Geometric pattern sample</figcaption>
-          </figure>
-          <figure>
-            <img src="https://cdn.jsdelivr.net/gh/Schemenadl-C/alborz-moquette@main/docs/images/geometric-brown.jpg" alt="Brown geometric moquette roll" loading="lazy">
-            <figcaption>Almas-style pattern in brown</figcaption>
-          </figure>
-          <figure>
-            <img src="https://cdn.jsdelivr.net/gh/Schemenadl-C/alborz-moquette@main/docs/images/almas-samples.jpg" alt="Almas color samples" loading="lazy">
-            <figcaption>Almas multi-color samples</figcaption>
-          </figure>
-          <figure>
-            <img src="https://cdn.jsdelivr.net/gh/Schemenadl-C/alborz-moquette@main/docs/images/zarin-4.jpg" alt="Zarin design in four colors" loading="lazy">
-            <figcaption>Zarin collection – 4 color options</figcaption>
-          </figure>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- Sales / Retail & Wholesale -->
   <section class="section sales" id="sales">
     <div class="container">
       <div class="section-header">
-        <p class="eyebrow">How to Buy</p>
-        <h2>Retail & Wholesale</h2>
+        <p class="eyebrow" data-i18n="salesEyebrow">نحوه خرید</p>
+        <h2 data-i18n="salesTitle">خرده‌فروشی و عمده</h2>
       </div>
       <div class="sales-grid">
         <div class="sales-card">
-          <div class="sales-icon">🏪</div>
-          <h3>Retail</h3>
-          <p>Perfect for homeowners, small projects, and designers. Purchase by the square meter or in standard roll lengths.</p>
+          <h3 data-i18n="retailTitle">خرده‌فروشی</h3>
+          <p data-i18n="retailP">برای خانه، دکوراسیون و پروژه‌های کوچک. خرید متری یا رول استاندارد.</p>
           <ul>
-            <li>Minimum order: 10 m²</li>
-            <li>Sample packs available</li>
-            <li>Home delivery options</li>
-            <li>Installation advice included</li>
+            <li data-i18n="retail1">حداقل سفارش: ۱۰ متر مربع</li>
+            <li data-i18n="retail2">ارسال نمونه رنگ</li>
+            <li data-i18n="retail3">امکان ارسال به سراسر کشور</li>
+            <li data-i18n="retail4">مشاوره نصب</li>
           </ul>
-          <a href="#contact" class="btn btn-primary btn-sm">Inquire Retail</a>
+          <a href="#contact" class="btn btn-primary btn-sm" data-i18n="retailBtn">استعلام خرده</a>
         </div>
         <div class="sales-card featured">
-          <div class="sales-icon">📦</div>
-          <h3>Wholesale</h3>
-          <p>Designed for contractors, interior firms, hotels, and large-scale projects. Competitive volume pricing and dedicated support.</p>
+          <h3 data-i18n="wholeTitle">عمده / پروژه</h3>
+          <p data-i18n="wholeP">برای پیمانکاران، هتل، شرکت‌های دکوراسیون و پروژه‌های بزرگ. قیمت پلکانی.</p>
           <ul>
-            <li>Volume discounts from 200 m²</li>
-            <li>Custom color matching on request</li>
-            <li>Priority production slots</li>
-            <li>Export documentation available</li>
+            <li data-i18n="whole1">تخفیف از ۲۰۰ متر مربع</li>
+            <li data-i18n="whole2">هماهنگی رنگ سفارشی</li>
+            <li data-i18n="whole3">اولویت تولید</li>
+            <li data-i18n="whole4">مدارک صادرات در صورت نیاز</li>
           </ul>
-          <a href="#contact" class="btn btn-primary btn-sm">Request Wholesale Quote</a>
+          <a href="#contact" class="btn btn-primary btn-sm" data-i18n="wholeBtn">استعلام عمده</a>
         </div>
-      </div>
-      <div class="sales-note">
-        <p>All products are manufactured under strict quality control. We provide technical data sheets and care instructions with every order.</p>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
   <section class="section contact" id="contact">
     <div class="container">
       <div class="section-header">
-        <p class="eyebrow">Get in Touch</p>
-        <h2>Contact Us</h2>
+        <p class="eyebrow" data-i18n="contactEyebrow">ارتباط</p>
+        <h2 data-i18n="contactTitle">تماس با ما</h2>
       </div>
       <div class="contact-grid">
         <div class="contact-info">
-          <h3>Alborz Moquette</h3>
-          <p class="contact-item"><strong>Address:</strong><br>Industrial Zone, Alborz Province, Iran</p>
-          <p class="contact-item"><strong>Phone:</strong><br>+98 26 3XXX XXXX</p>
-          <p class="contact-item"><strong>Mobile / WhatsApp:</strong><br>+98 912 XXX XXXX</p>
-          <p class="contact-item"><strong>Email:</strong><br>sales@alborzmoquette.com</p>
-          <p class="contact-item"><strong>Hours:</strong><br>Sat – Thu: 8:00 – 17:00</p>
+          <h3 data-i18n="brand">موکت البرز</h3>
+          <p class="contact-item"><strong data-i18n="addrLabel">آدرس</strong><span data-i18n="addrVal">شهرک صنعتی، استان البرز، ایران</span></p>
+          <p class="contact-item"><strong data-i18n="phoneLabel">تلفن</strong><span dir="ltr">+98 26 3XXX XXXX</span></p>
+          <p class="contact-item"><strong>واتساپ</strong><span dir="ltr">+98 912 XXX XXXX</span></p>
+          <p class="contact-item"><strong>ایمیل</strong><span dir="ltr">sales@alborzmoquette.com</span></p>
+          <p class="contact-item"><strong data-i18n="hoursLabel">ساعات کاری</strong><span data-i18n="hoursVal">شنبه تا پنجشنبه ۸ تا ۱۷</span></p>
         </div>
-        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! This is a sample form. In a real site your message would be sent.');">
+        <form class="contact-form" id="contactForm">
           <div class="form-row">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Email Address" required>
+            <input type="text" id="fName" required>
+            <input type="email" id="fEmail" required>
           </div>
-          <input type="text" placeholder="Company / Project Name">
-          <select>
-            <option value="">Inquiry Type</option>
-            <option>Retail Purchase</option>
-            <option>Wholesale Quote</option>
-            <option>Product Sample</option>
-            <option>Technical Question</option>
+          <input type="text" id="fCompany">
+          <select id="fType">
+            <option value="" data-i18n="inqType">نوع درخواست</option>
+            <option data-i18n="inqRetail">خرید خرده</option>
+            <option data-i18n="inqWhole">استعلام عمده</option>
+            <option data-i18n="inqSample">نمونه محصول</option>
+            <option data-i18n="inqTech">سؤال فنی</option>
           </select>
-          <textarea rows="5" placeholder="Tell us about your project, required colors, approximate quantity..."></textarea>
-          <button type="submit" class="btn btn-primary">Send Message</button>
+          <textarea id="fMsg" rows="5"></textarea>
+          <button type="submit" class="btn btn-primary" data-i18n="sendBtn">ارسال پیام</button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="logo-mark">AM</span>
-        <span>Alborz Moquette</span>
-      </div>
-      <p>© 2026 Alborz Moquette (Taban Moquette Alborz). All rights reserved. Sample website for demonstration.</p>
-      <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <div class="footer-brand"><span class="logo-mark">م‌ا</span><span data-i18n="brand">موکت البرز</span></div>
+      <p data-i18n="footer">© ۱۴۰۵ موکت البرز (تابان موکت البرز). نمونه وب‌سایت.</p>
     </div>
   </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" type="button" aria-label="close">×</button>
+    <img id="lbImg" alt="">
+  </div>
 
   <script src="script.js"></script>
 </body>

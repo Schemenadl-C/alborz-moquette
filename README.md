@@ -1,7 +1,7 @@
-# Alborz Moquette
+# موکت البرز — Alborz Moquette
 
-Static sample website for Alborz Moquette (Taban Moquette Alborz).
+نسخه فارسی وب‌سایت نمونه.
 
-Open the live page:
+Live:
 
 https://rawcdn.githack.com/Schemenadl-C/alborz-moquette/main/docs/index.html
