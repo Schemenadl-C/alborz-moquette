@@ -81,7 +81,7 @@ const I18N = {
   }
 };
 
-let lang = "fa";
+let lang = "en";
 
 function applyLang(next) {
   lang = next;
@@ -96,12 +96,24 @@ function applyLang(next) {
   document.getElementById("fEmail").placeholder = dict.phEmail;
   document.getElementById("fCompany").placeholder = dict.phCompany;
   document.getElementById("fMsg").placeholder = dict.phMsg;
-  document.getElementById("langToggle").textContent = lang === "fa" ? "EN" : "فا";
-  document.title = lang === "fa" ? "موکت البرز | پوشش‌های لوکس کف" : "Alborz Moquette | Premium floor coverings";
+  document.getElementById("langToggle").textContent = lang === "fa" ? "EN" : "FA";
+  document.title = lang === "fa" ? "موکت البرز | پوشش‌های لوکس کف" : "Alborz Moquette | Premium Floor Coverings";
+  document.querySelectorAll(".logo-mark").forEach((el) => { el.textContent = lang === "fa" ? "م‌ا" : "AM"; });
+  const titles = {
+    velour: { fa: "طرح ولور", en: "Velour", other: { fa: "Velour", en: "طرح ولور" } },
+    almas: { fa: "طرح الماس", en: "Almas", other: { fa: "Almas", en: "طرح الماس" } },
+    zarin: { fa: "طرح زرین", en: "Zarin", other: { fa: "Zarin", en: "طرح زرین" } },
+    parquet: { fa: "طرح پارکت", en: "Parquet", other: { fa: "Parquet", en: "طرح پارکت" } },
+  };
+  ["velour","almas","zarin","parquet"].forEach((id) => {
+    const h = document.querySelector("#"+id+" h3");
+    if (!h) return;
+    h.innerHTML = titles[id][lang] + ' <span class="en-name">' + titles[id].other[lang] + "</span>";
+  });
 }
 
 document.getElementById("langToggle").addEventListener("click", () => applyLang(lang === "fa" ? "en" : "fa"));
-applyLang("fa");
+applyLang("en");
 
 const nav = document.getElementById("nav");
 document.getElementById("menuToggle").addEventListener("click", () => nav.classList.toggle("open"));
